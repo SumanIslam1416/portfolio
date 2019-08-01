@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+}
+
+/* body */
+
+Body{
+    background-color: #444;
+    color: #fff;
+    margin: 0;
+    height: 100%;
+    font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+body>.overlay{
+    position: absolute;
+    top:auto;
+    right: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+
+}
+
+/*header*/
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.menu-btn{
+    position: absolute;
+    z-index: 3;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+
+}
+.btn-line{
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background-color: #fff;
+    border-radius: 55px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 400;
+
+}
+
+
+.lg-heading{
+    font-size: 3.5rem;
+    margin-left: 10px;
+}
+.sm-heading{
+    font-size: 1.2rem;
+    padding: 0.2rem 1rem;
+    margin-bottom: 15px;
+
+}
+.text-secondary{
+    color: #f6abb6;
+}
+
+main{
+
+    /*height: 100%; */
+    min-height: calc(100vh - 60px);
+    padding: 50px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border: 3px solid #fff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.5s ease-out;
+}
+
+div.boxes:hover{
+    padding: .7rem;
+    background-color: yellow  ;
+    color: #111;
+
+}
+
+
+
+#main-footer{
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    height: 60px;
+}
+
+/*responsive web design*/
+
+/*xtra large laptop*/
+@media screen and (max-width: 2560px){
+    .lg-heading{
+        font-size: 4rem;
+    }
+    .sm-heading{
+        font-size: 3.5rem;
+    }
+
+    .projects{
+        grid-template-columns: repeat(4,1fr);
+    }
+    img{
+        width: 100%;
+        height: 156px;
+
+    }
+}
+
+/*large laptop*/
+@media screen and (max-width: 2560px){
+    .lg-heading{
+        font-size: 3.5rem;
+    }
+    .sm-heading{
+        font-size: 3rem;
+    }
+    .boxes {
+        font-size: 2rem;
+    }
+}
+
+/*laptop*/
+@media screen and (max-width: 1024px){
+    .lg-heading{
+        font-size: 3.5rem;
+    }
+    .sm-heading{
+        font-size: 3rem;
+    }
+    .boxes {
+        font-size: 1.7rem;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width: 768px){
+    .lg-heading{
+        font-size: 3rem;
+    }
+    .sm-heading{
+        font-size: 2.5rem;
+    }
+    .boxes {
+        font-size: 1.5rem;
+    }
+
+/*mobile large*/
+
+@media screen and (max-width: 425px){
+    .lg-heading{
+        font-size: 3rem;
+    }
+    .sm-heading{
+        font-size: 1rem;
+    }
+    .boxes {
+        font-size: 1rem;
+    }
+}
+/*mobile medium*/
+
+@media screen and (max-width: 375px){
+    .lg-heading{
+        font-size: 2.3rem;
+    }
+    .sm-heading{
+        font-size: .8rem;
+    }
+    .boxes {
+        font-size: .9rem;
+    }
+}
+
+/*mobile small*/
+
+@media screen and (max-width: 320px){
+    .lg-heading{
+        font-size: 2rem;
+    }
+    .sm-heading{
+        font-size: 0.7rem;
+    }
+    .boxes {
+        font-size: .7rem;
+    }
+}
